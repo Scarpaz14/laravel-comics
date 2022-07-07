@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;
-
-400;500&display=swap);body {
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap);body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -19,7 +17,6 @@
 /*-------------------------------
 RESET
 ------------------------------*/
-
 * {
   margin: 0;
   padding: 0;
@@ -45,3 +42,9 @@ li {
   padding-right: 40px;
 }
 
+.hero-img {
+  background-image: url("../image/jumbotron.jpg");
+  background-size: cover;
+  width: 100%;
+  min-height: 450px;
+}
