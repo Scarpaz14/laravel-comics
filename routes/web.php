@@ -17,3 +17,14 @@ Route::get('/', function () {
     $comics = config('comics');
     return view('home', compact('comics'));
 });
+
+Route::get('card/{id}', function ($id){
+    $comics = config('comics');
+
+    if($id >= count($comics)){
+        abort('404');
+    }
+    $card= $comics[$id];
+
+    return view('singol-comics', compact('card'));
+})->where('id','[0-9]+');
