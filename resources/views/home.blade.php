@@ -7,9 +7,16 @@ DC Comics
 @section('page-content')
     <section id="main-section">
         <div class="container-main">
-            @foreach ($comics as $card)
-                <x-card-comics :image="$card['thumb']" :title="$card['title']"/>
-            @endforeach
+            <div class="row">
+                @foreach ($comics as $index => $card)
+                <div class="col">
+                    <a href="{{route('singolCard', ['id' => $index])}}">
+                        <x-card-comics :image="$card['thumb']" :title="$card['title']"/>
+                    </a>
+                </div>
+                @endforeach
+            </div>
         </div>
     </section>
 @endsection
+

@@ -1,7 +1,7 @@
 
-    <div class="singol-card col-2">
+    <div class="singol-card">
         <div class="card my-3">
-            <img class="img-fluid" src="{{$image}}" alt="thumb">
+            <img src="{{$image}}" alt="{{$title}}">
             <div class="title">
                 <h5>{{$title}}</h5>
             </div>

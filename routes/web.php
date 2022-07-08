@@ -15,10 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('comics');
+  
     return view('home', compact('comics'));
-});
+})->name('home');
 
-Route::get('card/{id}', function ($id){
+Route::get('comics/{id}', function ($id){
     $comics = config('comics');
 
     if($id >= count($comics)){
@@ -27,4 +28,6 @@ Route::get('card/{id}', function ($id){
     $card= $comics[$id];
 
     return view('singol-comics', compact('card'));
-})->where('id','[0-9]+');
+})->where('id','[0-9]+')->name('singolCard');
+
+
