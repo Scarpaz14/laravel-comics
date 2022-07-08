@@ -1,4 +1,11 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap);body {
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap);.container-main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 90rem;
+}
+
+body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -8,10 +15,6 @@
   ------------------------------*/
   --primary-color: #0282f9;
   --secondary-color: #464652;
-  /*-------------------------------
-  SIZE CONTAINERS
-  ------------------------------*/
-  --container-standard: 90rem;
 }
 
 /*-------------------------------
@@ -23,7 +26,7 @@ RESET
   box-sizing: border-box;
 }
 
-.container-standard {
+.container-header {
   width: 90rem;
   margin: auto;
 }

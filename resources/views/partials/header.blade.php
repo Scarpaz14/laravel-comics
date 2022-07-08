@@ -4,7 +4,7 @@
         <span>ADDITIONAL SITES</span>
     </div>
 </div>
-<div class="container-standard">
+<div class="container-header">
 <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light">
         <img class="logo" src="{{asset('image/dc-logo.png')}}" alt="">

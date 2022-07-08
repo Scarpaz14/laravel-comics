@@ -5,21 +5,11 @@ DC Comics
 @endsection
 
 @section('page-content')
-<section>
-    <div class="container">
-        @foreach ($comics as $card)
-        <div class="singol-card">
-            <div class="card">
-                <img style="width: 70px" src="{{$card['thumb']}}" alt="thumb">
-                <div class="title">
-                    <small>{{$card['title']}}</small>
-                </div>
-            </div>
+    <section>
+        <div class="container-main">
+            @foreach ($comics as $card)
+                <x-card-comics :image="$card['thumb']" :title="$card['title']"/>
+            @endforeach
         </div>
-        @endforeach
-        
-    </div>
-</section>
-
-
+    </section>
 @endsection
