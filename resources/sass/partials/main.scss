@@ -1,0 +1,21 @@
+main{
+
+    .container-main{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 90rem;
+        padding: 50px 0px;
+    }
+    
+    .btn_current_series{
+        color: white;
+        background-color: var(--primary-color);
+        font-size: 20px;
+        padding: 10px 20px;
+        border: none;
+        font-weight: bold;
+        position: relative;
+        top: -70px;
+    }
+}

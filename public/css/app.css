@@ -6,10 +6,6 @@
   padding: 50px 0px;
 }
 
-#main-section {
-  background-color: var(--secondary-color);
-}
-
 .container-product {
   margin: auto;
   width: 90rem;
@@ -24,7 +20,7 @@ body {
   COLORS
   ------------------------------*/
   --primary-color: #0282f9;
-  --secondary-color: #464652;
+  --secondary-color: #1c1c1c;
 }
 
 /*-------------------------------
@@ -60,4 +56,42 @@ li {
   background-size: cover;
   width: 100%;
   min-height: 450px;
+}
+
+main .container-main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 90rem;
+  padding: 50px 0px;
+}
+main .btn_current_series {
+  color: white;
+  background-color: var(--primary-color);
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  position: relative;
+  top: -70px;
+}
+
+.singol-card {
+  flex-wrap: wrap;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.title {
+  color: white;
+  margin: 10px 0;
+}
+
+#main-section {
+  background-color: var(--secondary-color);
 }
